@@ -84,9 +84,9 @@ Both are **soft dependencies** — the plugin works fine without them.
 
 | Property | Value |
 |---|---|
-| API version | `1.20` |
-| Built against | Paper API `1.21.11-R0.1-SNAPSHOT` |
-| Java target | `1.8` |
+| API version | `26.3` |
+| Built against | Paper API `26.3.build.175-stable` |
+| Java target | `25` |
 
 ---
 
