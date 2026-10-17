@@ -1,5 +1,6 @@
 package com.skygridsupport;
 
+import com.budgienet.chatutil.ChatUtil;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -20,7 +21,7 @@ public class SkyGridRTPCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // Permission check
         if (!sender.hasPermission("SkyGridSupport.RTP")) {
-            sender.sendMessage("No permission");
+            ChatUtil.sendMsg(sender, "No permission", false);
             return false;
         }
 

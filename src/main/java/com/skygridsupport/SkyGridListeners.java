@@ -1,5 +1,6 @@
 package com.skygridsupport;
 
+import com.budgienet.chatutil.ChatUtil;
 import com.sk89q.worldedit.extent.Extent;
 import com.sk89q.worldguard.LocalPlayer;
 import com.sk89q.worldguard.WorldGuard;
@@ -44,7 +45,7 @@ public class SkyGridListeners implements Listener {
             if (GriefPrevention.instance.claimsEnabledForWorld(block.getWorld())) {
                 String allowBuild = GriefPrevention.instance.allowBuild(player,block.getLocation());
                 if (allowBuild != null) {
-                    player.sendMessage("No permission.");
+                    ChatUtil.sendMsg(player, "No permission.", false);
                     return;
                 }
             }
